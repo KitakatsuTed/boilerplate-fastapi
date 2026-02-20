@@ -1,4 +1,5 @@
 """Login/Password (Session) authentication provider."""
+
 import secrets
 from datetime import timedelta
 from typing import Any, Dict

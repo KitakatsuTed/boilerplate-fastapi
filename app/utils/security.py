@@ -1,4 +1,5 @@
 """Security utilities."""
+
 from passlib.context import CryptContext
 
 # bcryptでパスワードハッシュ化

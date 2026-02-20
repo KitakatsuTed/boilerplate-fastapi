@@ -1,4 +1,5 @@
 """User create schema."""
+
 from app.schemas.user.base import UserBase
 
 

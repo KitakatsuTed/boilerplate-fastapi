@@ -1,4 +1,5 @@
 """SQLAlchemy Base class."""
+
 from sqlalchemy.orm import DeclarativeBase
 
 

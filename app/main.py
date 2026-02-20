@@ -1,4 +1,5 @@
 """FastAPI application entrypoint."""
+
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -51,6 +52,7 @@ app.add_middleware(
 
 # 2. 相関IDミドルウェア
 app.add_middleware(CorrelationIdMiddleware)
+
 
 # ヘルスチェックエンドポイント
 @app.get("/health")

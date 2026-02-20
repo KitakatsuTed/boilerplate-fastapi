@@ -1,4 +1,5 @@
 """Dependency injection providers."""
+
 from fastapi import Depends, Header, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 

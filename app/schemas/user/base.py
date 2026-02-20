@@ -1,4 +1,5 @@
 """User base schema."""
+
 from pydantic import BaseModel, ConfigDict, EmailStr
 
 

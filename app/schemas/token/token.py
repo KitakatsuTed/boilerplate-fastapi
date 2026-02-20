@@ -1,4 +1,5 @@
 """Token schema."""
+
 from pydantic import BaseModel
 
 

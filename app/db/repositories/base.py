@@ -1,4 +1,5 @@
 """Base repository for CRUD operations."""
+
 from typing import Dict, Generic, List, Type, TypeVar
 
 from sqlalchemy import select

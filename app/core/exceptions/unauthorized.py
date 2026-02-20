@@ -1,4 +1,5 @@
 """UnauthorizedError exception."""
+
 from app.core.exceptions.business import BusinessException
 
 

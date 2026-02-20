@@ -1,4 +1,5 @@
 """User update schema."""
+
 from pydantic import BaseModel, EmailStr
 
 

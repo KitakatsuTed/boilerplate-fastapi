@@ -1,4 +1,5 @@
 """Pytest configuration."""
+
 import asyncio
 from typing import AsyncGenerator, Generator
 

@@ -1,4 +1,5 @@
 """ForbiddenError exception."""
+
 from app.core.exceptions.business import BusinessException
 
 

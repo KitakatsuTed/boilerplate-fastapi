@@ -1,6 +1,6 @@
 """Login/Password (Session) authentication provider."""
 import secrets
-from datetime import datetime, timedelta
+from datetime import timedelta
 from typing import Any, Dict
 
 from fastapi import HTTPException, status
@@ -48,12 +48,12 @@ class LoginPasswordProvider(BaseAuthProvider):
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="Session has expired",
-            )
+            ) from None
         except (BadSignature, ValueError):
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="Invalid session",
-            )
+            ) from None
 
     async def verify_session(self, session_token: str) -> Dict[str, Any] | None:
         """Verify session token."""

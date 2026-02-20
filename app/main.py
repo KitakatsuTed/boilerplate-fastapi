@@ -4,6 +4,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api.v1.router import api_router
 from app.core.config import settings
 from app.core.exceptions.business import BusinessException
 from app.core.handlers import business_exception_handler, general_exception_handler
@@ -65,6 +66,4 @@ async def health_check():
 
 
 # ルーター登録
-from app.api.v1.router import api_router
-
 app.include_router(api_router, prefix="/api/v1")

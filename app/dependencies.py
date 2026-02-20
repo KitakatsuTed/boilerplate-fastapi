@@ -48,7 +48,7 @@ async def get_current_user(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid authorization header",
             headers={"WWW-Authenticate": "Bearer"},
-        )
+        ) from None
 
     # Verify token and get payload
     payload = await auth_provider.verify_token(token)

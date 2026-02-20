@@ -68,3 +68,8 @@ Thumbs.db
 # Claude Code
 .claude/*/output.md
 .claude/*/output.json
+.claude/settings.json
+
+# Obsidian
+.obsidian/
+.Obsidian/
